@@ -22,7 +22,10 @@ public class GoodsApp {
 
 		
 		//상품 정보 출력
-
+		for(Goods g : goods) {
+			//
+		}
+				
 		
 		// 자원정리
 		scanner.close();
