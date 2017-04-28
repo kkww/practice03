@@ -1,12 +1,37 @@
 package prob05;
 
 public class Account {
-    private AccountNo;
-    private Balance;
+    private String accountNo;
+    private int balance;
     
-    Account(int n) {
-      //
+    Account(String accountNo) {
+    	this.accountNo = accountNo;
+    	System.out.println(accountNo + " 계좌가 개설되었습니다.");
     }
-  
-  //getter & setter
+
+	public String getAccountNo() {
+		return accountNo;
+	}
+
+	public void setAccountNo(String accountNo) {
+		this.accountNo = accountNo;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+	public void save(int m) {
+		this.balance += m;
+		System.out.println(accountNo + " 계좌에 " + m + "만원이 입금되었습니다.");
+	}
+	
+	public void deposit(int m) {
+		this.balance -= m;
+		System.out.println(accountNo + " 계좌에 " + m + "만원이 출금되었습니다.");
+	}
 }
